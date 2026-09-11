@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "csci151fa26"
+assignment: "lab-1-intro-java"
+owner:
+  username: "taylorbakare"
+  id: 180457685
+  accepted_at: "2026-08-31T18:56:14Z"
+source:
+  owner: "oberlin-csci151-fa26"
+  owner_id: 317085905
+  repo: "lab-1-intro-java"
+  branch: "main"
