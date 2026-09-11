@@ -39,7 +39,7 @@ public class CourseEvals {
 
         while (rowScanner.hasNextLine()) {
             String currentLine = rowScanner.nextLine();
-            Scanner colScanner = new Scanner(currentLine);
+            Scanner colScanner = new Scanner(Integer.parseInt(currentLine));
             int curEval = 0;
             int curscore = 0;
             for (int i = 0; i < 2; i++) {
@@ -66,7 +66,7 @@ public class CourseEvals {
                 curscore += score;
             }
             colScanner.close();
-            System.out.println("Line Evaluated As Course: " + curEval + " Score: " + curscore );
+            System.out.println("Line Evaluated As Course: " + semester + " Score: " + curscore );
         }
         rowScanner.close();
         System.out.println("Evaluation Done!");
