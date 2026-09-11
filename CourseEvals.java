@@ -22,9 +22,6 @@ public class CourseEvals {
         int summercount = 0;
         int totalregularscore = 0; 
         int regularcount = 0;
-        int linesCount = 0;
-
-
 
         Scanner fileFinder = new Scanner(System.in);
         Scanner rowScanner = null;
@@ -41,7 +38,7 @@ public class CourseEvals {
         while (rowScanner.hasNextLine()) {
             String currentLine = rowScanner.nextLine();
             Scanner colScanner = new Scanner(currentLine);
-            int curscore = 0;
+            // int curscore = 0;
             String semester = "";
             for (int i = 0; i < 2; i++) {
                 colScanner.nextInt();
@@ -73,7 +70,7 @@ public class CourseEvals {
            
 
         }
-        System.out.println("Evaluated Lines: " + linesCount);
+
         rowScanner.close();
         System.out.println("Evaluation Done!");
         int summeravg = (totalsummerscore / summercount);
