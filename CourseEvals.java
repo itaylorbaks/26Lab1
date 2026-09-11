@@ -24,11 +24,14 @@ public class CourseEvals {
         int regularcount = 0;
         int regularavg = (totalregularscore / regularcount);
 
+        Scanner fileFinder = new Scanner(System.in);
         Scanner rowScanner = null;
+        Scanner colScanner = null;
         System.out.println("What is your filename?: ");
         try {
-            rowScanner = new Scanner(File(System.in));
+            rowScanner = new Scanner(new File(fileFinder.next()));
             System.out.println("File Found!");
+            fileFinder.close();
         }
         catch (FileNotFoundException e) {
             System.out.println("Problem opening file: " + e.getMessage());
