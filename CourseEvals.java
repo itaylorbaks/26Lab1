@@ -69,8 +69,8 @@ public class CourseEvals {
         }
         rowScanner.close();
         System.out.println("Evaluation Done!");
-        int summeravg = totalsummerscore / summercount;
-        int regularavg = totalregularscore / regularcount;
+        int summeravg = (totalsummerscore / summercount);
+        int regularavg = (totalregularscore / regularcount);
         System.out.println("The average evaluation of a summer class is: " + summeravg);
         System.out.println("The average evaluation of a regular class is: " + regularavg);
 
