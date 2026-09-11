@@ -7,6 +7,7 @@
 
 import java.io.FileNotFoundException;
 import java.util.Random;
+import java.io.File;
 import java.util.Scanner;
 
 public class CourseEvals {
