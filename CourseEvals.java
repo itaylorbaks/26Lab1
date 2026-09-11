@@ -6,7 +6,6 @@
  */
 
 import java.io.FileNotFoundException;
-import java.util.InputMismatchException;
 import java.util.Random;
 import java.io.File;
 import java.util.Scanner;
@@ -35,14 +34,7 @@ public class CourseEvals {
         catch (FileNotFoundException e) {
             System.out.println("Problem opening file: " + e.getMessage());
         }
-            try {
-            rowScanner.hasNextInt();
-        }
-        catch (InputMismatchException e) {
-            System.out.println("This File Cannot Be Parsed for Integers: " + e.getMessage());
-        }
-        
-
+      
         while (rowScanner.hasNextLine()) {
             
             String currentLine = rowScanner.nextLine();
