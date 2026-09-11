@@ -42,6 +42,7 @@ public class CourseEvals {
             Scanner colScanner = new Scanner(currentLine);
             int curEval = 0;
             int curscore = 0;
+            String semester = "";
             for (int i = 0; i < 2; i++) {
                 colScanner.nextInt();
             }
@@ -49,12 +50,12 @@ public class CourseEvals {
             if (sem == 1) {
                 summercount++;
                 curEval += 1;
-                String semester = "summer";
+                semester = "summer";
             }
             if (sem == 2) {
                 regularcount++;
                 curEval +=2;
-                String semester = "regular";
+                semester = "regular";
             }
             colScanner.nextInt();
             int score = colScanner.nextInt();
