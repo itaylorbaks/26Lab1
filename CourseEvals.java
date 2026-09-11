@@ -42,6 +42,7 @@ public class CourseEvals {
             Scanner colScanner = new Scanner(currentLine);
             int curscore = 0;
             String semester = "";
+            int linesCount = 0;
             for (int i = 0; i < 2; i++) {
                 colScanner.nextInt();
             }
@@ -59,13 +60,18 @@ public class CourseEvals {
             if (semester == "summer") {
                 totalsummerscore += score;
                 curscore += score;
+                linesCount += 1;
             }
             if (semester == "regular") {
                 curscore += score;
                 totalregularscore += score;
+                linesCount += 1;
             }
             colScanner.close();
-            System.out.println("Line Evaluated As Course: " + semester + " Score: " + curscore );
+            //Method to check whether the program is assessing each line correctly
+            // System.out.println("Line Evaluated As Course: " + semester + " Score: " + curscore );
+            System.out.println("Evaluated Lines: " + linesCount);
+
         }
         rowScanner.close();
         System.out.println("Evaluation Done!");
