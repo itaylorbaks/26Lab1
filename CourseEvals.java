@@ -56,13 +56,11 @@ public class CourseEvals {
             int score = colScanner.nextInt();
             if (semester == "summer") {
                 totalsummerscore += score;
-                curscore += score;
-                linesCount += 1;
+                // curscore += score;
             }
             if (semester == "regular") {
-                curscore += score;
+                // curscore += score;
                 totalregularscore += score;
-                linesCount += 1;
             }
             colScanner.close();
             //Method to check whether the program is assessing each line correctly
