@@ -4,6 +4,11 @@
  *
  * @author Your Name Goes Here
  */
+
+import java.io.FileNotFoundException;
+import java.util.Random;
+import java.util.Scanner;
+
 public class CourseEvals {
     /**
      * The main function is the implementation of our program.
@@ -18,6 +23,19 @@ public class CourseEvals {
         int totalregularscore = 0; 
         int regularcount = 0;
         int regularavg = (totalregularscore / regularcount);
+
+        Scanner rowScanner = null;
+        System.out.println("What is your filename?: ");
+        try {
+            rowScanner = new Scanner(File(System.in));
+            System.out.println("File Found!");
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("Problem opening file: " + e.getMessage());
+        }
+
+        }
+
 
     }
 }
