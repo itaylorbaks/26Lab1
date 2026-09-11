@@ -20,10 +20,10 @@ public class CourseEvals {
     public static void main(String[] args) {
         int totalsummerscore = 0;
         int summercount = 0;
-        int summeravg = (totalsummerscore / summercount);
+        int summeravg = 0;
         int totalregularscore = 0; 
         int regularcount = 0;
-        int regularavg = (totalregularscore / regularcount);
+        int regularavg = 0;
 
         Scanner fileFinder = new Scanner(System.in);
         Scanner rowScanner = null;
