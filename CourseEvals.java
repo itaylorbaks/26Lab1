@@ -39,7 +39,7 @@ public class CourseEvals {
 
         while (rowScanner.hasNextLine()) {
             String currentLine = rowScanner.nextLine();
-            Scanner colScanner = new Scanner(Integer.parseInt(currentLine));
+            Scanner colScanner = new Scanner(currentLine);
             int curEval = 0;
             int curscore = 0;
             for (int i = 0; i < 2; i++) {
