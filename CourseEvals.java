@@ -65,6 +65,7 @@ public class CourseEvals {
             }
             if (curEval == 2) {
                 curscore += score;
+                totalregularscore += score;
             }
             colScanner.close();
             System.out.println("Line Evaluated As Course: " + semester + " Score: " + curscore );
