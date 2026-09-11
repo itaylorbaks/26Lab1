@@ -12,6 +12,12 @@ public class CourseEvals {
      *             of the data file to read.
      */
     public static void main(String[] args) {
-        // TODO: implement your solution here
+        int totalsummerscore = 0;
+        int summercount = 0;
+        int summeravg = (totalsummerscore / summercount);
+        int totalregularscore = 0; 
+        int regularcount = 0;
+        int regularavg = (totalregularscore / regularcount);
+
     }
 }
