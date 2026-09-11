@@ -40,7 +40,6 @@ public class CourseEvals {
         while (rowScanner.hasNextLine()) {
             String currentLine = rowScanner.nextLine();
             Scanner colScanner = new Scanner(currentLine);
-            int curEval = 0;
             int curscore = 0;
             String semester = "";
             for (int i = 0; i < 2; i++) {
@@ -49,21 +48,19 @@ public class CourseEvals {
             int sem = colScanner.nextInt();
             if (sem == 1) {
                 summercount++;
-                curEval += 1;
                 semester = "summer";
             }
             if (sem == 2) {
                 regularcount++;
-                curEval +=2;
                 semester = "regular";
             }
             colScanner.nextInt();
             int score = colScanner.nextInt();
-            if (curEval == 1) {
+            if (semester == "summer") {
                 totalsummerscore += score;
                 curscore += score;
             }
-            if (curEval == 2) {
+            if (semester == "regular") {
                 curscore += score;
                 totalregularscore += score;
             }
